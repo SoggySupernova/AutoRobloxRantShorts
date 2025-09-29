@@ -1,0 +1,21 @@
+del subtitles.txt
+del enter.txt
+del trimmed.srt
+del trimmed.wav
+del shifted.srt
+del shifted.wav
+del replaced.srt
+del output.srt
+del input.mp4
+del convoutput.mp4
+del audio.wav
+del normalspeed.mp4
+del line_number_*.png
+del FINALWAV.wav
+del ACTUALFINALWAV.wav
+del output_video.mp4
+del llamaresult.json
+del output.md
+del finalsub.txt
+del bracketed.json
+exit
