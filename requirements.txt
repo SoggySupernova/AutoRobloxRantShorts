@@ -1,0 +1,6 @@
+requests
+f5-tts
+pysrt
+selenium
+moviepy<=1.0.3
+pillow<10
