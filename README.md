@@ -1,6 +1,10 @@
 # AutoRobloxRantShorts
 NOT PRODUCTION READY AT ALL, DON'T USE THIS LOL
 
+todo: remove hardcoded file paths
+
+* in align_subtitles.sh
+* imagemagick binary
 
 # How to Use
 
