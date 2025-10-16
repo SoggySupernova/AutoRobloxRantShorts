@@ -11,8 +11,20 @@ todo: remove hardcoded file paths
 1. git clone this
 2. Look at SETUP_WINDOWS.md for windows or SETUP_LINUX.md for linux
 3. record your gameplay and save it as input.mkv in the AutoRobloxRantShorts directory
-4. download required assets
+4. place required assets
 5. run "Run The Thing.vbs" for windows, or "" for linux
+
+## Required Assets
+
+Place all of them in the assets directory
+
+### spritesheet.txt
+A 640x160 base64-encoded image with four 160x160 pictograms representing the emojis 😐, 🥀, 🙏, and 😭 respectively. Make your own or use a set like OpenMoji.
+
+### font.txt
+The font that will be used for subtitles. A TTF file I think? TikTok Sans for example.
+
+### 
 
 ## Generating a Video
 
