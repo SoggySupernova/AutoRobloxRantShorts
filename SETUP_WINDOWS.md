@@ -2,7 +2,7 @@
 ---
 Tested on Python 3.11.9.
 ---
-You need ffmpeg, ollama, and firefox correctly installed and configured. You need to download the `mistral` model as well:
+You need ffmpeg, ollama, ImageMagick, and firefox correctly installed and configured. You need to download the `mistral` model as well:
 ```shell
 ollama pull mistral
 ```
@@ -56,4 +56,5 @@ python3.10 -m venv venv
 source venv/bin/activate
 pip install numpy==1.22.4
 pip install aeneas
+
 ```
