@@ -8,7 +8,7 @@ Remember to keep ALL the line breaks of the original text. Do not add any new li
 
 # Tag rules:
 
-- Last line of a sentence: {happy}, {sad}, or {neutral} depending on the tone of the sentence.
+- Last line of a sentence: {positive}, {confusing}, {shocking}, or {depressing} depending on the tone of the sentence.
 - Other lines: {1}, {2}, {3}, or {4} depending on the emotional or humourous intensity of that line.
 
 # Example:
@@ -18,7 +18,7 @@ HOW does SLANG {1}
 go from being THE {1}
 COOLEST thing ever {3}
 to COMPLETELY EMBARRASSING {4}
-in like TWO WEEKS? {neutral}
+in like TWO WEEKS? {confusing}
 One day, EVERYBODY's saying it {2}
 
 ...and so on. Notice how EVERY line has a tag at the end, the last line of each sentence has a word in a bracket, and other lines have a number in the bracket.
@@ -50,4 +50,6 @@ for line in response.iter_lines():
         except Exception:
             continue
 with open("bracketed.json", "w", encoding="utf-8") as f:
-    f.write((result + '\nSubscribe. {neutral}').replace('{1}','😐').replace('{2}','🥀').replace('{3}','🙏').replace('{4}','😭').replace('{neutral}','😭🙏'))
+    f.write((result + '\nSubscribe. {neutral}').replace('{1}','😐').replace('{2}','🥀').replace('{3}','🙏').replace('{4}','😭').replace('{neutral}','😭🙏').replace('{positive}','😭🙏').replace('{confusing}','😭🙏').replace('{shocking}','😭🙏').replace('{depressing}','😭🙏'))
+with open("origbracketed.json", "w", encoding="utf-8") as f:
+    f.write(result + '\nSubscribe. {neutral}')
