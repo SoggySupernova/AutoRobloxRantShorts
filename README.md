@@ -25,7 +25,7 @@ todo: remove hardcoded file paths
 7. Click Align Subtitles. todo: combine add subtitles and render video and add "view final video" button
 8. Click Render Video.
 9. Check the video "FINALVIDEO.mp4"
-10. If everything looks good, click Clean Up.
+10. If everything looks good, click Clean Up. (It won't look good because it's broken right now)
 
 ## Tips
 
