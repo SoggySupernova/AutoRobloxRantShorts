@@ -12,7 +12,7 @@ todo: remove hardcoded file paths
 2. Look at SETUP_WINDOWS.md for windows or SETUP_LINUX.md for linux
 3. record your gameplay and save it as input.mkv in the AutoRobloxRantShorts directory
 4. place required assets
-5. run "run_no_console.vbs" for windows, or "" for linux
+5. run run_no_console.vbs for windows, or "" for linux
 
 ## Required Assets
 
