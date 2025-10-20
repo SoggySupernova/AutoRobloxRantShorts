@@ -2,6 +2,8 @@
 NOT PRODUCTION READY AT ALL, DON'T USE THIS LOL
 
 todo: remove hardcoded file paths
+todo: why do they need to be base64 encoded?
+todo: put the temporary generated files in a folder instead of main directory
 
 * in align_subtitles.sh
 * imagemagick binary
