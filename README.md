@@ -22,9 +22,19 @@ Place all of them in the assets directory
 A 640x160 base64-encoded image with four 160x160 pictograms representing the emojis 😐, 🥀, 🙏, and 😭 respectively. Make your own or use a set like OpenMoji.
 
 ### font.txt
-The font that will be used for subtitles. A TTF file I think? TikTok Sans for example.
+The font that will be used for subtitles. A base64-encoded TTF file I think? TikTok Sans for example.
 
-### 
+### nah script.txt
+The script that will be used as a style guide for the script generator. It should have bolded words.
+
+### bg.mp3
+The background music for the video.
+
+### vineboom.wav
+The sound effect that will be played at the end of impactful sentences.
+
+### thirteen.mp3
+The voice source that will be used for text to speech. Note that f5-tts only uses the first ~10 seconds.
 
 ## Generating a Video
 
