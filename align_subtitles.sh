@@ -1,4 +1,1 @@
-cd ~
-source Python-3.10.0/venv/bin/activate
-cd /mnt/c/Users/Max/Downloads/AutoRobloxRantShorts
-python -m aeneas.tools.execute_task audio.wav finalsub.txt "task_language=eng|is_text_type=subtitles|os_task_file_format=srt" output.srt
+cd ~ && source Python-3.10.0/venv/bin/activate && cd /mnt/c/Users/Max/AutoRobloxRantShorts && python -m aeneas.tools.execute_task audio.wav finalsub.txt "task_language=eng|is_text_type=subtitles|os_task_file_format=srt" output.srt

@@ -18,4 +18,6 @@ del llamaresult.json
 del output.md
 del finalsub.txt
 del bracketed.json
+del origbracketed.json
+del replaced_subs.srt
 exit
