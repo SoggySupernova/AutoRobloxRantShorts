@@ -111,13 +111,32 @@ def main():
             overlays.append(img_clip)
 
     if overlays:
-        final = CompositeVideoClip([video, *overlays])
+        # ensure composite uses the same frame size as the source
+        composite = CompositeVideoClip([video, *overlays], size=video.size)
+        # compute the desired duration: at least the video duration;
+        # also handle the (unlikely) case where an overlay extends past the video
+        overlay_ends = [oc.start + oc.duration for oc in overlays]
+        max_overlay_end = max(overlay_ends) if overlay_ends else 0
+        composite_duration = max(video.duration, max_overlay_end)
+
+        # explicitly set duration
+        final = composite.set_duration(composite_duration)
     else:
         final = video
 
-    # export
-    # choose a codec that preserves quality; adjust as you like
-    final.write_videofile(OUTPUT_VIDEO, codec="libx264", audio_codec="aac", threads=4, preset="medium")
+    export_fps = getattr(video, "fps", None) or 24
+
+    # export (preserve audio from original video)
+    final.write_videofile(
+        OUTPUT_VIDEO,
+        codec="libx264",
+        audio_codec="aac",
+        threads=4,
+        preset="medium",
+        fps=export_fps,
+        audio=True
+    )
+
 
     # cleanup
     final.close()

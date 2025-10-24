@@ -1,1 +1,1 @@
-CreateObject("Wscript.Shell").Run "run_no_console.bat", 0, True
+CreateObject("Wscript.Shell").Run "python run_windows.py", 0, True

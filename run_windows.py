@@ -145,9 +145,9 @@ class CustomGUI:
         ttk.Button(main_frame, text="View File", command=self.on_view_file).grid(row=3, column=2, sticky="ew", pady=2, padx=5)
 
         # Start button at the bottom
-        ttk.Button(main_frame, text="Align Subtitles", command=self.on_start).grid(row=4, column=0, columnspan=1, sticky="ew", pady=2, padx=5)
-        ttk.Button(main_frame, text="Render Video",command=self.on_finish).grid(row=4, column=1, columnspan=1, sticky="ew", pady=2, padx=5)
-        ttk.Button(main_frame, text="Clean Up",command=self.on_cleanup).grid(row=4, column=2, columnspan=1, sticky="ew", pady=2, padx=5)
+        ttk.Button(main_frame, text="Make Video", command=self.on_start).grid(row=4, column=0, columnspan=1, sticky="ew", pady=2, padx=5)
+        ttk.Button(main_frame, text="Clean Up",command=self.on_cleanup).grid(row=4, column=1, columnspan=1, sticky="ew", pady=2, padx=5)
+        ttk.Button(main_frame, text="Open Result",command=self.on_openfinal).grid(row=4, column=2, columnspan=1, sticky="ew", pady=2, padx=5)
 
         self.left_textbox.bind("<<Modified>>", lambda e: self.on_text_modified(self.left_textbox, "bracketed.json"))
         self.right_textbox.bind("<<Modified>>", lambda e: self.on_text_modified(self.right_textbox, "finalsub.txt"))
@@ -252,6 +252,9 @@ class CustomGUI:
     def on_cleanup(self):
         print("cleaning up")
         subprocess.run('start cmd /K "scripts\\batch\\clean up.bat"', shell=True)
+    def on_openfinal(self):
+        print("cleaning up")
+        os.startfile("FINALVIDEO.mp4")
 
 if __name__ == "__main__":
     root = tk.Tk()

@@ -58,6 +58,7 @@ cmd = [
     "ffmpeg",
     "-ss", f"{trim_start:.6f}",
     "-i", mp4_path,
+    "-y",
     "-to", f"{trim_end - trim_start:.6f}",  # duration, not absolute end
     "-c:v", "libx264", "-crf", "18", "-preset", "veryfast",
     "-c:a", "aac", "-b:a", "192k",
