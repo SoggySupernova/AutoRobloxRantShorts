@@ -20,4 +20,5 @@ del finalsub.txt
 del bracketed.json
 del origbracketed.json
 del replaced_subs.srt
+del itdoesntlikewhenioverwritethevideo.mp4
 exit

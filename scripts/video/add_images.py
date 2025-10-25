@@ -12,7 +12,7 @@ VIDEO_PATH = "input.mp4"                # your video
 SRT_PATH = "trimmed.srt"                # original SRT (will not be modified)
 ORIG_TEXT_PATH = "origbracketed.json"   # text file with replacement subtitle lines (one per subtitle)
 OUTPUT_SRT = "replaced_subs.srt"        # new SRT produced (original SRT kept)
-OUTPUT_VIDEO = "input.mp4"              # overwrite file so I don't have to change all my scripts again
+OUTPUT_VIDEO = "itdoesntlikewhenioverwritethevideo.mp4"
 IMAGE_FOLDER = "assets"                 # where <word>.png files live (relative or absolute)
 IMAGE_HEIGHT = 320                      # px height for overlaid image (auto-resize)
 OVERLAY_DURATION = 1.15                 # seconds: how long the image stays (fade will happen during this)
@@ -134,7 +134,8 @@ def main():
         threads=4,
         preset="medium",
         fps=export_fps,
-        audio=True
+        audio=True,
+        ffmpeg_params=["-avoid_negative_ts","make_zero"]
     )
 
 
@@ -142,7 +143,7 @@ def main():
     final.close()
     video.close()
 
-    print(f"Done. New SRT: {OUTPUT_SRT}   Video: {OUTPUT_VIDEO}")
+    print(f"Done. New SRT: {OUTPUT_SRT}   Video: {OUTPUT_VIDEO}    Length: {video.duration}")
 
 if __name__ == "__main__":
     main()
