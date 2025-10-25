@@ -1,45 +1,50 @@
 # AutoRobloxRantShorts
+
 NOT PRODUCTION READY AT ALL, DON'T USE THIS LOL
 
-todo: remove hardcoded file paths
-todo: why do they need to be base64 encoded?
-todo: put the temporary generated files in a folder instead of main directory
-todo: autoclose windows when done
-todo: add "Subscribe." to first textbox so numbers match
-todo: autodetect number mismatch
-todo: generate TTS automatically
-
-* in align_subtitles.sh
+* todo: remove hardcoded file paths
+  todo: why do they need to be base64 encoded?
+  todo: put the temporary generated files in a folder instead of main directory
+  todo: autoclose windows when done
+  todo: add "Subscribe." to first textbox so numbers match
+  todo: autodetect number mismatch
+* in align\_subtitles.sh
 * imagemagick binary
 
 # How to Use
 
 1. git clone this
-2. Look at SETUP_WINDOWS.md for windows or SETUP_LINUX.md for linux
+2. Look at SETUP\_WINDOWS.md for windows or SETUP\_LINUX.md for linux
 3. record your gameplay and save it as input.mkv in the AutoRobloxRantShorts directory
 4. place required assets
-5. run run_no_console.vbs for windows, or "" for linux
+5. run run\_no\_console.vbs for windows, or "" for linux
 
 ## Required Assets
 
 Place all of them in the assets directory
 
 ### spritesheet.txt
+
 A 640x160 base64-encoded image with four 160x160 pictograms representing the emojis 😐, 🥀, 🙏, and 😭 respectively. Make your own or use a set like OpenMoji.
 
 ### font.txt
+
 The font that will be used for subtitles. A base64-encoded TTF file I think? TikTok Sans for example.
 
 ### nah script.txt
+
 The script that will be used as a style guide for the script generator. It should have bolded words.
 
 ### bg.mp3
+
 The background music for the video.
 
 ### vineboom.wav
+
 The sound effect that will be played at the end of impactful sentences.
 
 ### thirteen.mp3
+
 The voice source that will be used for text to speech. Note that f5-tts only uses the first ~10 seconds.
 
 ## Generating a Video
