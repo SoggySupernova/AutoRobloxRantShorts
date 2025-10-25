@@ -1,4 +1,4 @@
-wsl -e bash -c "./align_subtitles.sh"
+wsl -e bash -c "./scripts/text/align_subtitles.sh"
 ffmpeg -i input.mkv -y -c copy convoutput.mp4
 ffmpeg -i convoutput.mp4 -y -filter:v "crop=490:870:683:182" -c:a copy normalspeed.mp4
 ffmpeg -i normalspeed.mp4 -y -filter:v "setpts=0.65*PTS" input.mp4
