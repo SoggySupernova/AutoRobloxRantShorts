@@ -58,7 +58,7 @@ The voice source that will be used for text to speech. Note that f5-tts only use
 7. Click Align Subtitles. todo: combine add subtitles and render video and add "view final video" button
 8. Click Render Video.
 9. Check the video "FINALVIDEO.mp4"
-10. If everything looks good, click Clean Up. (It won't look good because it's broken right now)
+10. If everything looks good, click Clean Up.
 
 ## Tips
 
