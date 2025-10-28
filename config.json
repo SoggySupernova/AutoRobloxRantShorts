@@ -1,0 +1,6 @@
+{
+	"main_model": "mistral",
+	"brackets_model": "mistral",
+	"plain_model": "mistral",
+	"add_images": true
+}

@@ -3,11 +3,11 @@
 NOT PRODUCTION READY AT ALL, DON'T USE THIS LOL
 
 * todo: remove hardcoded file paths
-  todo: why do they need to be base64 encoded?
-  todo: put the temporary generated files in a folder instead of main directory
-  todo: autoclose windows when done
-  todo: add "Subscribe." to first textbox so numbers match
-  todo: autodetect number mismatch
+* todo: why do they need to be base64 encoded?
+* todo: put the temporary generated files in a folder instead of main directory
+* todo: autoclose windows when done
+* todo: add "Subscribe." to first textbox so numbers match
+* todo: autodetect number mismatch
 * in align\_subtitles.sh
 * imagemagick binary
 
