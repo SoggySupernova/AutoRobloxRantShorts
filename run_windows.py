@@ -146,8 +146,8 @@ class CustomGUI:
 
         # Start button at the bottom
         ttk.Button(main_frame, text="Make Video", command=self.on_start).grid(row=4, column=0, columnspan=1, sticky="ew", pady=2, padx=5)
-        ttk.Button(main_frame, text="Clean Up",command=self.on_cleanup).grid(row=4, column=1, columnspan=1, sticky="ew", pady=2, padx=5)
-        ttk.Button(main_frame, text="Open Result",command=self.on_openfinal).grid(row=4, column=2, columnspan=1, sticky="ew", pady=2, padx=5)
+        ttk.Button(main_frame, text="Clean Up",command=self.on_cleanup).grid(row=4, column=2, columnspan=1, sticky="ew", pady=2, padx=5)
+        ttk.Button(main_frame, text="Open Result",command=self.on_openfinal).grid(row=4, column=1, columnspan=1, sticky="ew", pady=2, padx=5)
 
         self.left_textbox.bind("<<Modified>>", lambda e: self.on_text_modified(self.left_textbox, "bracketed.json"))
         self.right_textbox.bind("<<Modified>>", lambda e: self.on_text_modified(self.right_textbox, "finalsub.txt"))

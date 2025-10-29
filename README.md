@@ -55,10 +55,9 @@ The voice source that will be used for text to speech. Note that f5-tts only use
 4. If the numbers don't match, use one or both of the other two Regenerate buttons until the second and third numbers match the first number. You can also edit the text by hand if you prefer.
 5. Click "Start TTS Server." Wait until it says "Running on local URL" and then click "Generate TTS." todo: do this automatically
 6. Click "View File." Listen to the generated audio file. f5-tts struggles with hyphens and exclamation points. If this is an issue, edit the second textbox and regenerate the TTS with the previous two buttons.
-7. Click Align Subtitles.
-8. Click Render Video.
-9. Check the video "FINALVIDEO.mp4"
-10. If everything looks good, click Clean Up.
+7. Click Make Video.
+8. Click Open Result.
+9. If everything looks good, click Clean Up.
 
 ## Tips
 
