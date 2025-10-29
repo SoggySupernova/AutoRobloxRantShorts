@@ -1,6 +1,6 @@
 # External Dependencies
 ---
-Tested on Python 3.11.9.
+Tested on Python 3.11.9 and pip 21.2.
 ---
 You need ffmpeg, ollama, ImageMagick, and firefox correctly installed and configured. You need to download the `mistral` model as well:
 ```shell
@@ -33,10 +33,6 @@ python -m pip install --upgrade librosa
 ## Install Torch for Nvidia GPU
 ```
 pip install torch==2.4.0+cu124 torchaudio==2.4.0+cu124 --extra-index-url https://download.pytorch.org/whl/cu124
-```
-## More errors yay!
-```
-pip install --force-reinstall -v "numpy==1.26.4"
 ```
 
 # WSL Instructions
