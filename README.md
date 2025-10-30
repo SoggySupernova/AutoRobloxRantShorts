@@ -6,7 +6,7 @@ NOT PRODUCTION READY AT ALL, DON'T USE THIS LOL
 ### Todo
 
 * remove hardcoded imagemagick path
-* Linux support
+* Linux support (bat -> sh, forward slashes)
 * why do they need to be base64 encoded?
 * put the temporary generated files in a folder instead of main directory
 * autoclose windows when done
