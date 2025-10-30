@@ -3,8 +3,8 @@ import subprocess
 from fractions import Fraction
 
 # --- Configuration ---
-srt_path = "trimmed.srt"
-mp4_path = "output_video.mp4"
+srt_path = "temp/trimmed.srt"
+mp4_path = "temp/output_video.mp4"
 output_path = "FINALVIDEO.mp4"
 
 # --- Step 1: Detect framerate from MP4 ---
@@ -67,3 +67,4 @@ cmd = [
 
 subprocess.run(cmd, check=True)
 print(f"Frame-accurate trimmed video saved to: {output_path}")
+
