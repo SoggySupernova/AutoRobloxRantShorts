@@ -24,7 +24,7 @@ def parse_srt_utf8(srt_path):
 
 def generate_subtitle(txt, line_number):
     """Loads a pre-rendered image for the subtitle line as an ImageClip."""
-    img_path = f"line_number_{line_number}.png"
+    img_path = f"temp/line_number_{line_number}.png"
     img_clip = ImageClip(img_path).set_duration(0.1)  # Duration will be set later
     return img_clip
 
@@ -46,4 +46,5 @@ def add_subtitles_and_audio(video_path, audio_path, srt_path, output_path):
     final_video.write_videofile(output_path, codec="libx264", audio_codec="aac")
 
 # Example usage
-add_subtitles_and_audio("input.mp4", "ACTUALFINALWAV.wav", "trimmed.srt", "output_video.mp4")
+add_subtitles_and_audio("temp/input.mp4", "temp/ACTUALFINALWAV.wav", "temp/trimmed.srt", "temp/output_video.mp4")
+
