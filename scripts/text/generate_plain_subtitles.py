@@ -42,7 +42,7 @@ Respond only with the corrected text.
 
 The user will now provide the text.
 """
-with open("enter.txt", "r", encoding="utf-8") as f:
+with open("temp/enter.txt", "r", encoding="utf-8") as f:
     question = f.read().lower()
 print("Generating script...")
 data = {
@@ -65,5 +65,5 @@ for line in response.iter_lines():
                 result += content
         except Exception:
             continue
-with open("subtitles.txt", "w", encoding="utf-8") as f:
+with open("temp/subtitles.txt", "w", encoding="utf-8") as f:
     f.write(result.replace('\n','\n\n').replace('🙏','').replace('😭','').replace('😐','').replace('🥀',''))
