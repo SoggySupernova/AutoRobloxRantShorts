@@ -5,6 +5,7 @@ NOT PRODUCTION READY AT ALL, DON'T USE THIS LOL
 
 ### Todo
 
+* clarify the line numbering system (add "Subscribe" to first file instead of appending to others, double newlines in script that processes file instead of file itself)
 * remove hardcoded imagemagick path
 * Linux support (bat -> sh, forward slashes)
 * why do they need to be base64 encoded?
