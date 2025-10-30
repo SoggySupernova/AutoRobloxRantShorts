@@ -22,30 +22,30 @@ class CustomGUI:
     def watch_files(self):
         # Watch for changes in bracketed.json and finalsub.txt
         try:
-            bracketed_mtime = os.path.getmtime("bracketed.json")
+            bracketed_mtime = os.path.getmtime("temp/bracketed.json")
             if self.last_bracketed_mtime != bracketed_mtime:
                 self.last_bracketed_mtime = bracketed_mtime
-                with open("bracketed.json", "r", encoding="utf-8") as f:
+                with open("temp/bracketed.json", "r", encoding="utf-8") as f:
                     output_content = f.read()
                 self.left_textbox.delete("1.0", tk.END)
                 self.left_textbox.insert(tk.END, output_content)
         except Exception as e:
             pass
         try:
-            finalsub_mtime = os.path.getmtime("finalsub.txt")
+            finalsub_mtime = os.path.getmtime("temp/finalsub.txt")
             if self.last_finalsub_mtime != finalsub_mtime:
                 self.last_finalsub_mtime = finalsub_mtime
-                with open("finalsub.txt", "r", encoding="utf-8") as f:
+                with open("temp/finalsub.txt", "r", encoding="utf-8") as f:
                     output_content = f.read()
                 self.right_textbox.delete("1.0", tk.END)
                 self.right_textbox.insert(tk.END, output_content)
         except Exception as e:
             pass
         try:
-            enter_mtime = os.path.getmtime("enter.txt")
+            enter_mtime = os.path.getmtime("temp/enter.txt")
             if self.last_enter_mtime != enter_mtime:
                 self.last_enter_mtime = enter_mtime
-                with open("enter.txt", "r", encoding="utf-8") as f:
+                with open("temp/enter.txt", "r", encoding="utf-8") as f:
                     output_content = f.read()
                 self.evenrighter_textbox.delete("1.0", tk.END)
                 self.evenrighter_textbox.insert(tk.END, output_content)
@@ -155,7 +155,7 @@ class CustomGUI:
         self.update_linecount()
 
     def update_linecount(self):
-        left_lines = int(self.left_textbox.index('end-1c').split('.')[0]) # this code makes no sens
+        left_lines = int(self.left_textbox.index('end-1c').split('.')[0]) # this code makes no sense
         right_lines = str(int(int(self.right_textbox.index('end-1c').split('.')[0]) + 1) / 2).replace('.0','') # What the fudge
         evenrighter_lines = int(self.evenrighter_textbox.index('end-1c').split('.')[0]) + 1 # compensate for the fact that the first textbox doesn't have "Subscribe." at the end
         self.linecount_label.config(text=f"{evenrighter_lines} {right_lines} {left_lines}")
@@ -170,11 +170,11 @@ class CustomGUI:
                     f.write(content)
                 # update last_mtime so watch_files doesn’t immediately reload
                 mtime = os.path.getmtime(filename)
-                if filename == "bracketed.json":
+                if filename == "temp/bracketed.json":
                     self.last_bracketed_mtime = mtime
-                elif filename == "finalsub.txt":
+                elif filename == "temp/finalsub.txt":
                     self.last_finalsub_mtime = mtime
-                elif filename == "enter.txt":
+                elif filename == "temp/enter.txt":
                     self.last_enter_mtime = mtime
             except Exception as e:
                 print(f"Error writing to {filename}: {e}")
@@ -194,14 +194,14 @@ class CustomGUI:
         print("Run finished")
         # After running, read output.txt and set left_textbox contents
         try:
-            with open("bracketed.json", "r", encoding="utf-8") as f:
+            with open("temp/bracketed.json", "r", encoding="utf-8") as f:
                 output_content = f.read()
             self.left_textbox.delete("1.0", tk.END)
             self.left_textbox.insert(tk.END, output_content)
         except Exception as e:
             print(f"Error reading enter.txt: {e}")
         try:
-            with open("finalsub.txt", "r", encoding="utf-8") as f:
+            with open("temp/finalsub.txt", "r", encoding="utf-8") as f:
                 output_content = f.read()
             self.right_textbox.delete("1.0", tk.END)
             self.right_textbox.insert(tk.END, output_content)
