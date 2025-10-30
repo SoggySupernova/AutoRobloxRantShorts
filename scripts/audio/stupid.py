@@ -4,7 +4,7 @@ from gradio_client import Client, handle_file
 
 client = Client("http://localhost:7860/")
 
-with open('finalsub.txt','r') as txt:
+with open('temp/finalsub.txt','r') as txt:
   tx = txt.read()
 
 print('Generating...')
@@ -24,6 +24,7 @@ result = client.predict(
 )
 
 with open(result[0],'rb') as la:
-  with open('audio.wav','wb') as file:
+  with open('temp/audio.wav','wb') as file:
     file.write(la.read())
+
 print(result[0])
