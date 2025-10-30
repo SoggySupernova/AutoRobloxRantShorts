@@ -229,7 +229,7 @@ class CustomGUI:
     def on_make_file(self):
         print("Make File button pressed.")
         try:
-            subprocess.run(f'start cmd /K python scripts\\audio\\stupid.py', shell=True)
+            subprocess.run(f'start cmd /C python scripts\\audio\\stupid.py', shell=True)
         except Exception as e:
             print(f"(Ignored) Error running makefile.py: {e}")
 

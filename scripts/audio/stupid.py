@@ -26,5 +26,4 @@ result = client.predict(
 with open(result[0],'rb') as la:
   with open('audio.wav','wb') as file:
     file.write(la.read())
-    print('Finished. You may now close both windows.')
 print(result[0])
