@@ -51,13 +51,13 @@ The voice source that will be used for text to speech. Note that f5-tts only use
 
 1. Replace "Why do we all have that one friend who..." with your topic
 2. Click Generate All
-3. Check the three textboxes and the the three numbers in the top right. All three numbers should match. (todo: add "Subscribe." to first text so this is actually true)
-4. If the numbers don't match, use one or both of the other two Regenerate buttons until the second and third numbers match the first number. You can also edit the text by hand if you prefer.
+3. Check the text on the top right. If it says "Good," you can most likely continue.
+4. If the text is three numbers that don't match, use one or both of the other two Regenerate buttons until the second and third numbers match the first number. You can also edit the text by hand if you prefer.
 5. Click "Start TTS Server." Wait until it says "Running on local URL" and then click "Generate TTS." todo: do this automatically
-6. Click "View File." Listen to the generated audio file. f5-tts struggles with hyphens and exclamation points. If this is an issue, edit the second textbox and regenerate the TTS with the previous two buttons.
+6. Click "View File." Listen to the generated audio file. f5-tts struggles with hyphens (it inserts a long pause like an em dash) and exclamation points (the pitch of the voice raises unnaturally). If this is an issue, edit the second textbox and regenerate the TTS with the previous two buttons.
 7. Click Make Video.
 8. Click Open Result.
-9. If everything looks good, click Clean Up.
+9. If everything looks good, click Clean Up. If the subtitles don't line up, look more closely at the three textboxes. Make sure they all have the same words and have newlines in the same places. If something went wrong with the video, you only need to click Make Video again. (Sometimes Firefox decides to randomly not work)
 
 ## Tips
 

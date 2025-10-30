@@ -155,10 +155,12 @@ class CustomGUI:
         self.update_linecount()
 
     def update_linecount(self):
-        left_lines = int(self.left_textbox.index('end-1c').split('.')[0])
+        left_lines = int(self.left_textbox.index('end-1c').split('.')[0]) # this code makes no sens
         right_lines = str(int(int(self.right_textbox.index('end-1c').split('.')[0]) + 1) / 2).replace('.0','') # What the fudge
-        evenrighter_lines = int(self.evenrighter_textbox.index('end-1c').split('.')[0])
+        evenrighter_lines = int(self.evenrighter_textbox.index('end-1c').split('.')[0]) + 1 # compensate for the fact that the first textbox doesn't have "Subscribe." at the end
         self.linecount_label.config(text=f"{evenrighter_lines} {right_lines} {left_lines}")
+        if int(left_lines) == int(right_lines) == int(evenrighter_lines): # wow weird chaining, cool
+            self.linecount_label.config(text=f"Good")
 
     def on_text_modified(self, textbox, filename):
         if textbox.edit_modified():  # Only act if modified
