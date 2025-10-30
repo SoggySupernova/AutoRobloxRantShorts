@@ -25,7 +25,7 @@ One day, EVERYBODY's saying it {2}
 
 Respond with ONLY the updated text—no explanations, no extra output. The user will now provide the text.
 """
-with open("enter.txt", "r", encoding="utf-8") as f:
+with open("temp/enter.txt", "r", encoding="utf-8") as f:
     question = '\n'.join([line.rstrip() for line in f.read().splitlines()]) # remove extra whitespace from each line
     print(question)
 print("Generating script...")
@@ -49,7 +49,7 @@ for line in response.iter_lines():
                 result += content
         except Exception:
             continue
-with open("bracketed.json", "w", encoding="utf-8") as f:
+with open("temp/bracketed.json", "w", encoding="utf-8") as f:
     f.write((result + '\nSubscribe. {neutral}').replace('{1}','😐').replace('{2}','🥀').replace('{3}','🙏').replace('{4}','😭').replace('{neutral}','😭🙏').replace('{positive}','😭🙏').replace('{confusing}','😭🙏').replace('{shocking}','😭🙏').replace('{depressing}','😭🙏'))
-with open("origbracketed.json", "w", encoding="utf-8") as f:
+with open("temp/origbracketed.json", "w", encoding="utf-8") as f:
     f.write(result + '\nSubscribe. {neutral}')
