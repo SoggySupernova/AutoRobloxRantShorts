@@ -13,6 +13,7 @@ NOT PRODUCTION READY AT ALL, DON'T USE THIS LOL
 * autodetect number mismatch
 * implement config
 * auto detect "Running on local URL"
+* generally just clean up the code (consolidate scripts, properly fix bandaged issues, etc.)
 
 # How to Use
 
