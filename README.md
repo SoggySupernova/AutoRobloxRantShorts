@@ -2,20 +2,23 @@
 
 NOT PRODUCTION READY AT ALL, DON'T USE THIS LOL
 
-* todo: remove hardcoded file paths
-* todo: why do they need to be base64 encoded?
-* todo: put the temporary generated files in a folder instead of main directory
-* todo: autoclose windows when done
-* todo: add "Subscribe." to first textbox so numbers match
-* todo: autodetect number mismatch
-* in align\_subtitles.sh
-* imagemagick binary
+
+### Todo
+
+* remove hardcoded file paths in align_subtitles.sh and imagemagick binary
+* Linux support
+* why do they need to be base64 encoded?
+* put the temporary generated files in a folder instead of main directory
+* autoclose windows when done
+* autodetect number mismatch
+* implement config
+* auto detect "Running on local URL"
 
 # How to Use
 
 1. git clone this
 2. Look at SETUP\_WINDOWS.md for windows or SETUP\_LINUX.md for linux
-3. record your gameplay and save it as input.mkv in the AutoRobloxRantShorts directory
+3. record your gameplay and save it as input.mkv in the main directory
 4. place required assets
 5. run run\_no\_console.vbs for windows, or "" for linux
 
@@ -33,9 +36,9 @@ The font that will be used for subtitles. A base64-encoded TTF file I think? Tik
 
 ### nah script.txt
 
-The script that will be used as a style guide for the script generator. It should have bolded words.
+The script that will be used as a style guide for the script generator. It should have bolded words in Markdown format.
 
-### bg.mp3
+### bgm.mp3
 
 The background music for the video.
 
@@ -46,6 +49,10 @@ The sound effect that will be played at the end of impactful sentences.
 ### thirteen.mp3
 
 The voice source that will be used for text to speech. Note that f5-tts only uses the first ~10 seconds.
+
+### confusing.png, depressing.png, positive.png, and shocking.png
+
+The images that will flash if add_images is enabled in the config.
 
 ## Generating a Video
 
