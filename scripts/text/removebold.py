@@ -10,8 +10,8 @@ def uppercase_and_remove_bold(markdown_text: str) -> str:
     return re.sub(pattern, replace_bold, markdown_text, flags=re.DOTALL)
 
 if __name__ == "__main__":
-    input_file = "llamaresult.json"
-    output_file = "output.md"
+    input_file = "temp/llamaresult.json"
+    output_file = "temp/output.md"
     # Read Markdown content
     with open(input_file, "r", encoding="utf-8") as f:
         content = f.read()
@@ -24,3 +24,4 @@ if __name__ == "__main__":
         f.write(processed_content)
 
     print(f"Processed file saved as {output_file}")
+

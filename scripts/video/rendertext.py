@@ -201,7 +201,7 @@ def main(input_file):
                 continue
             html = create_html()
             driver.get("data:text/html;charset=utf-8," + html)
-            save_canvas_image(driver, line, f"line_number_{i}.png")
+            save_canvas_image(driver, line, f"temp/line_number_{i}.png")
 
     driver.quit()
 
@@ -211,3 +211,4 @@ if __name__ == "__main__":
         print("Usage: python script.py input.txt")
     else:
         main(sys.argv[1])
+

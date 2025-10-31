@@ -30,5 +30,5 @@ for line in response.iter_lines():
                 result += content
         except Exception:
             continue
-with open("llamaresult.json", "w", encoding="utf-8") as f:
+with open("temp/llamaresult.json", "w", encoding="utf-8") as f:
     f.write(result)

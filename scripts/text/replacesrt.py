@@ -46,4 +46,5 @@ def replace_srt_captions(srt_path, txt_path, output_path):
 
 
 # Example usage:
-replace_srt_captions('output.srt', 'bracketed.json', 'replaced.srt')
+replace_srt_captions('temp/output.srt', 'temp/bracketed.json', 'temp/replaced.srt')
+

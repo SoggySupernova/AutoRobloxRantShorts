@@ -3,13 +3,13 @@
 NOT PRODUCTION READY AT ALL, DON'T USE THIS LOL
 
 
+
 ### Todo
 
 * clarify the line numbering system (add "Subscribe" to first file instead of appending to others, double newlines in script that processes file instead of file itself)
 * remove hardcoded imagemagick path
 * Linux support (bat -> sh, forward slashes)
 * why do they need to be base64 encoded?
-* put the temporary generated files in a folder instead of main directory
 * autoclose windows when done
 * autodetect number mismatch
 * implement config
@@ -54,7 +54,7 @@ The voice source that will be used for text to speech. Note that f5-tts only use
 
 ### confusing.png, depressing.png, positive.png, and shocking.png
 
-The images that will flash if add_images is enabled in the config.
+The images that will flash if add\_images is enabled in the config.
 
 ## Generating a Video
 

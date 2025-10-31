@@ -40,11 +40,12 @@ def insert_sound_effect(
 
 if __name__ == "__main__":
     insert_sound_effect(
-        base_audio_path="trimmed.wav",
-        srt_path="trimmed.srt",
+        base_audio_path="temp/trimmed.wav",
+        srt_path="temp/trimmed.srt",
         effect_audio_path="assets/vineboom.wav",
         phrase="😭🙏",  # change to your phrase
         volume_db=-5,                # negative to lower volume, positive to increase
-        output_path="FINALWAV.wav"
+        output_path="temp/FINALWAV.wav"
     )
+
 

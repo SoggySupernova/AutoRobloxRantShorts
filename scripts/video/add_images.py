@@ -8,11 +8,11 @@ from moviepy.editor import VideoFileClip, ImageClip, CompositeVideoClip
 import moviepy.video.fx.all as vfx
 
 # ---- CONFIG ----
-VIDEO_PATH = "input.mp4"                # your video
-SRT_PATH = "trimmed.srt"                # original SRT (will not be modified)
-ORIG_TEXT_PATH = "origbracketed.json"   # text file with replacement subtitle lines (one per subtitle)
-OUTPUT_SRT = "replaced_subs.srt"        # new SRT produced (original SRT kept)
-OUTPUT_VIDEO = "itdoesntlikewhenioverwritethevideo.mp4"
+VIDEO_PATH = "temp/input.mp4"                # your video
+SRT_PATH = "temp/trimmed.srt"                # original SRT (will not be modified)
+ORIG_TEXT_PATH = "temp/origbracketed.json"   # text file with replacement subtitle lines (one per subtitle)
+OUTPUT_SRT = "temp/replaced_subs.srt"        # new SRT produced (original SRT kept)
+OUTPUT_VIDEO = "temp/itdoesntlikewhenioverwritethevideo.mp4"
 IMAGE_FOLDER = "assets"                 # where <word>.png files live (relative or absolute)
 IMAGE_HEIGHT = 320                      # px height for overlaid image (auto-resize)
 OVERLAY_DURATION = 1.15                 # seconds: how long the image stays (fade will happen during this)

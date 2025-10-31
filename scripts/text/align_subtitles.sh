@@ -1,1 +1,1 @@
-current_dir=$(pwd) && cd ~ && source Python-3.10.0/venv/bin/activate && cd "$current_dir" && python -m aeneas.tools.execute_task audio.wav finalsub.txt "task_language=eng|is_text_type=subtitles|os_task_file_format=srt" output.srt
+current_dir=$(pwd) && cd ~ && source Python-3.10.0/venv/bin/activate && cd "$current_dir" && python -m aeneas.tools.execute_task temp/audio.wav temp/finalsub.txt "task_language=eng|is_text_type=subtitles|os_task_file_format=srt" temp/output.srt
