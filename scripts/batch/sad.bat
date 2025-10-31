@@ -1,5 +1,5 @@
 wsl -e bash -c "./scripts/text/align_subtitles.sh"
-ffmpeg -i temp/input.mkv -y -c copy temp/convoutput.mp4
+ffmpeg -i input.mkv -y -c copy temp/convoutput.mp4
 ffmpeg -i temp/convoutput.mp4 -y -filter:v "crop=490:870:683:182" -c:a copy temp/normalspeed.mp4
 ffmpeg -i temp/normalspeed.mp4 -y -filter:v "setpts=0.65*PTS" temp/input.mp4
 python scripts\text\replacesrt.py

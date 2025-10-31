@@ -149,9 +149,9 @@ class CustomGUI:
         ttk.Button(main_frame, text="Clean Up",command=self.on_cleanup).grid(row=4, column=2, columnspan=1, sticky="ew", pady=2, padx=5)
         ttk.Button(main_frame, text="Open Result",command=self.on_openfinal).grid(row=4, column=1, columnspan=1, sticky="ew", pady=2, padx=5)
 
-        self.left_textbox.bind("<<Modified>>", lambda e: self.on_text_modified(self.left_textbox, "bracketed.json"))
-        self.right_textbox.bind("<<Modified>>", lambda e: self.on_text_modified(self.right_textbox, "finalsub.txt"))
-        self.evenrighter_textbox.bind("<<Modified>>", lambda e: self.on_text_modified(self.evenrighter_textbox, "enter.txt"))
+        self.left_textbox.bind("<<Modified>>", lambda e: self.on_text_modified(self.left_textbox, "temp/bracketed.json"))
+        self.right_textbox.bind("<<Modified>>", lambda e: self.on_text_modified(self.right_textbox, "temp/finalsub.txt"))
+        self.evenrighter_textbox.bind("<<Modified>>", lambda e: self.on_text_modified(self.evenrighter_textbox, "temp/enter.txt"))
         self.update_linecount()
 
     def update_linecount(self):
@@ -224,7 +224,7 @@ class CustomGUI:
     def on_view_file(self):
         print("View File button pressed.")
         try:
-            os.startfile("audio.wav")
+            os.startfile("temp\\audio.wav")
         except Exception as e:
             print(f"(Ignored) Error opening audio.wav: {e}")
 
