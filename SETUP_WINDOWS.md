@@ -41,6 +41,7 @@ Apple Silicon
 pip install torch torchaudio
 ```
 # WSL Instructions
+Start menu -> search "Turn Windows features on and off" -> Turn on "Windows Subsystem for Linux"
 ```bash
 wsl --install
 cd ~
@@ -59,5 +60,6 @@ pip install numpy==1.22.4
 pip install aeneas
 
 ```
+
 
 
