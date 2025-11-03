@@ -14,22 +14,6 @@ Install libraries:
 pip install -r requirements.txt
 ```
 
-# Common Errors because pip is dumb
-Or maybe I'm dumb?
-
-## ModuleNotFoundError: No module named 'packaging'
-
-Solution:
-```
-python -m pip install --upgrade packaging
-```
-
-## ModuleNotFoundError: No module named 'librosa'
-
-```
-python -m pip install --upgrade librosa
-```
-
 ## Install Torch for Nvidia GPU
 ```
 pip install torch==2.4.0+cu124 torchaudio==2.4.0+cu124 --extra-index-url https://download.pytorch.org/whl/cu124
@@ -54,3 +38,4 @@ pip install numpy==1.22.4
 pip install aeneas
 
 ```
+
