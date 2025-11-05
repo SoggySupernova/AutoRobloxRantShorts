@@ -14,28 +14,34 @@ Install libraries:
 pip install -r requirements.txt
 ```
 
-# Common Errors because pip is dumb
-Or maybe I'm dumb?
-
-## ModuleNotFoundError: No module named 'packaging'
-
-Solution:
+## Install PyTorch
+NVIDIA GPU
 ```
-python -m pip install --upgrade packaging
-```
-
-## ModuleNotFoundError: No module named 'librosa'
-
-```
-python -m pip install --upgrade librosa
-```
-
-## Install Torch for Nvidia GPU
-```
+# Install pytorch with your CUDA version, e.g.
 pip install torch==2.4.0+cu124 torchaudio==2.4.0+cu124 --extra-index-url https://download.pytorch.org/whl/cu124
 ```
+AMD GPU
+```
+# Install pytorch with your ROCm version (Linux only), e.g.
+pip install torch==2.5.1+rocm6.2 torchaudio==2.5.1+rocm6.2 --extra-index-url https://download.pytorch.org/whl/rocm6.2
+```
+Intel GPU
+```
+# Install pytorch with your XPU version, e.g.
+# Intel® Deep Learning Essentials or Intel® oneAPI Base Toolkit must be installed
+pip install torch torchaudio --index-url https://download.pytorch.org/whl/test/xpu
 
+# Intel GPU support is also available through IPEX (Intel® Extension for PyTorch)
+# IPEX does not require the Intel® Deep Learning Essentials or Intel® oneAPI Base Toolkit
+# See: https://pytorch-extension.intel.com/installation?request=platform
+```
+Apple Silicon
+```
+# Install the stable pytorch, e.g.
+pip install torch torchaudio
+```
 # WSL Instructions
+Start menu -> search "Turn Windows features on and off" -> Turn on "Windows Subsystem for Linux"
 ```bash
 wsl --install
 cd ~
@@ -54,3 +60,6 @@ pip install numpy==1.22.4
 pip install aeneas
 
 ```
+
+
+
