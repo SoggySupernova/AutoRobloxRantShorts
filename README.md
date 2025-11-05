@@ -15,6 +15,7 @@ NOT PRODUCTION READY AT ALL, DON'T USE THIS LOL
 * implement config
 * auto detect "Running on local URL"
 * generally just clean up the code (consolidate scripts, properly fix bandaged issues, etc.)
+* updating bracketed.json should also update origbracketed.json
 
 # How to Use
 
