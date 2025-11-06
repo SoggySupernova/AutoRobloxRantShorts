@@ -50,6 +50,6 @@ for line in response.iter_lines():
         except Exception:
             continue
 with open("temp/bracketed.json", "w", encoding="utf-8") as f:
-    f.write(result + '\nSubscribe. {neutral}').replace('{1}','😐').replace('{2}','🥀').replace('{3}','🙏').replace('{4}','😭'))
+    f.write((result + '\nSubscribe. {neutral}').replace('{1}','😐').replace('{2}','🥀').replace('{3}','🙏').replace('{4}','😭'))
 with open("temp/origbracketed.json", "w", encoding="utf-8") as f:
     f.write(result + '\nSubscribe. 😭🙏')
