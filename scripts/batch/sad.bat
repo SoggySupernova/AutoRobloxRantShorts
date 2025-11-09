@@ -9,7 +9,7 @@ python scripts\audio\vineboom.py
 python scripts\video\add_images.py
 ffmpeg -i temp/itdoesntlikewhenioverwritethevideo.mp4 -y temp/input.mp4
 ffmpeg -i temp/FINALWAV.wav -i assets/bgm.mp3 -y -filter_complex "[0:a]volume=1.0[a1]; [1:a]volume=0.7[a2]; [a1][a2]amix=inputs=2:duration=longest:dropout_transition=0,volume=2[aout]" -map "[aout]" -ac 2 temp/ACTUALFINALWAV.wav
-python scripts\video\rendertext.py temp/bracketed.json
+python scripts\text\rendertext.py temp/bracketed.json
 python scripts\video\add_captions.py
 python scripts\video\finaltrim.py
 
