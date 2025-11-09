@@ -3,7 +3,6 @@ from moviepy.video.tools.subtitles import SubtitlesClip
 import codecs
 import re
 import moviepy.config as mpyconf
-mpyconf.change_settings({"IMAGEMAGICK_BINARY": r"C:\Program Files\ImageMagick-7.1.2-Q16-HDRI\magick.exe"})
 
 # Helper function to parse SRT file into a list of (start, end, text) tuples
 def parse_srt_utf8(srt_path):

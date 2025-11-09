@@ -6,6 +6,8 @@ You need ffmpeg, ollama, ImageMagick, and firefox correctly installed and config
 ```shell
 ollama pull mistral
 ```
+
+Do you need espeak?
 Also, because windows is stupid sometimes, you need to enable WSL.
 
 
