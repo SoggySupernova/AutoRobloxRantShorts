@@ -1,7 +1,7 @@
-requests
-f5-tts
-pysrt
-selenium
+requests==2.32.5
+f5-tts==1.1.9
+pysrt==1.1.2
+selenium==4.38.0
 moviepy<=1.0.3
 pillow<10
 numpy==1.26.4
