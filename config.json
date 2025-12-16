@@ -1,4 +1,5 @@
 {
+	"fun_fact": "This config doesn't actually do anything yet",
 	"main_model": "mistral",
 	"brackets_model": "mistral",
 	"plain_model": "mistral",
