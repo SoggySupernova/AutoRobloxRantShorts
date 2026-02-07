@@ -1,6 +1,7 @@
 # AutoRobloxRantShorts
 
-NOT PRODUCTION READY AT ALL, DON'T USE THIS LOL
+AI content farm generator!
+<br><br>**Percentage of AI-generated code: ~80%**
 
 
 
